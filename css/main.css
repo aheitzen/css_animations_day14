@@ -1,0 +1,33 @@
+:root {
+	--large-font: 650px;
+	--primary-color: #FBF5F3;
+	--secondary-color: #E28413;
+	--third-color: #000022;
+	--fourth-color: #DE3C4B;
+	--fifth-color: #C42847;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/soft_kill.png");
+}
+
+i.fa.fa-hand-peace-o {
+	font-size: var(--large-font);
+	text-align: center;
+	width: 100%;
+	margin-top: 55px;
+	animation-name: changeColor;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes changeColor {
+	0% {color: var(--primary-color);}
+	25% {color: var(--secondary-color);}
+	50% {color: var(--third-color);}
+	75% {color: var(--fourth-color);}
+	100% {color: var(--fifth-color);}
+}
